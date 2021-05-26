@@ -8,3 +8,9 @@ h1 {
 p {
    color: whitesmoke;
 }
+button {
+   color: black;
+   background-color: blueviolet;
+   font-size: large;
+   border-color: gold;
+}
