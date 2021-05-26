@@ -8,7 +8,6 @@
       <!-- head -->
       <link rel="stylesheet" href="home.css">
       <link rel="stylesheet" href="slideshow.css">
-      <script src = "menu.js"></script>
    </head>
    <body>
       <h1 id = "title">
@@ -16,30 +15,31 @@
          <button class = "menu" onclick = "document.location='https://qinbeans.github.io/about'"><strong>About</strong></button>
          <button class = "menu" onclick = "document.location='https://qinbeans.github.io/projects'"><strong>Projects</strong></button>
       </h1>
+      <br>
       <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
       <div class="slideshow-container">
          <!-- Full-width images with number and caption text -->
          <div class="mySlides fade">
             <div class="numbertext">1 / 4</div>
             <img src="imgs/beach.jpg" id = "img">
-            <div class="text">Caption Text</div>
+            <div class="text">Taking a look at the sun</div>
          </div>
        
          <div class="mySlides fade">
             <div class="numbertext">2 / 4</div>
-            <img src="imgs/christmas.jpg" id = "img">
-            <div class="text">Caption Two</div>
+            <img src="imgs/2dgame_alpha.PNG" id = "img">
+            <div class="text">Initial version of 2D Game</div>
          </div>
        
          <div class="mySlides fade">
             <div class="numbertext">3 / 4</div>
-            <img src="imgs/cooking.jpg" id = "img">
-            <div class="text">Caption Three</div>
+            <img src="imgs/2dgame_alpha2.PNG" id = "img">
+            <div class="text">Second version of the 2D Game</div>
          </div>
          <div class="mySlides fade">
             <div class="numbertext">4 / 4</div>
-            <img src="imgs/sf.jpg" id = "img">
-            <div class="text">Caption Three</div>
+            <img src="imgs/2dgame_server_alpha.PNG" id = "img">
+            <div class="text">Some server output</div>
          </div>
       </div>
       <br>
@@ -81,5 +81,10 @@
             dots[slideIndex-1].className += " active";
          }
       </script>
+      <br>
+      <p id = "quote">
+         "The way to get started is to quit talking and begin doing." -Walt Disney
+      </p>
+      <script src = "menu.js"></script>
    </body>
 </html>
