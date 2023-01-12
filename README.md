@@ -1,1 +1,0 @@
-# qinbeans.github.io
