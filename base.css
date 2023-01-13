@@ -11,7 +11,7 @@ h1 {
 
 .grid-auto {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
     grid-gap: 1rem;
     justify-items: center;
 }
