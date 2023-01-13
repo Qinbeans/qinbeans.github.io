@@ -1,8 +1,28 @@
 /* center H1 */
 
+/* root */
+:root {
+    --bg-color: #def4fa;
+    --text-color: ghostwhite;
+    --text-color-hover: #383838;
+    --box-color: #3838382a;
+    --box-color-hover: #ababab2a;
+    --accent-color: ghostwhite;
+    --accent-color-hover: #cccccc98;
+}
+
 * {
     /* font */
     font-family: 'Roboto', sans-serif;
+}
+
+html {
+    /* background */
+    background-color: var(--bg-color);
+    /* font */
+    font-size: 16px;
+    /* text */
+    color: var(--text-color);
 }
 
 h1 {
@@ -18,27 +38,47 @@ h1 {
 
 /* box */
 .section {
-    background-color: #3838382a;
-    padding: 1rem;
+    background-color: var(--box-color);
+    padding: 1.25rem;
     border-radius: 5px;
     margin: 1rem;
     border-style: solid;
-    border-color: ghostwhite;
+    border-color: var(--accent-color);
 }
 
 .back {
     position: absolute;
     top: 1rem;
     left: 1rem;
-    background-color: #3838382a;
+    background-color: var(--box-color);
     padding: 1rem;
     border-radius: 5px;
     margin: 1rem;
     border-style: solid;
-    border-color: ghostwhite;
+    border-color: var(--accent-color);
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 .back:hover {
-    background-color: #ababab2a;
-    border-color: #3838382a;
+    background-color: var(--box-color-hover);
+    border-color: var(--accent-color-hover);
+    color: var(--text-color-hover);
+}
+
+.goto {
+    background-color: var(--box-color);
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+    border-style: solid;
+    border-color: var(--accent-color);
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.goto:hover {
+    background-color: var(--box-color-hover);
+    border-color: var(--accent-color-hover);
+    color: var(--text-color-hover);
 }
