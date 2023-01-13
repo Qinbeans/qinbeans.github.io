@@ -25,3 +25,20 @@ h1 {
     border-style: solid;
     border-color: ghostwhite;
 }
+
+.back {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    background-color: #3838382a;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem;
+    border-style: solid;
+    border-color: ghostwhite;
+}
+
+.back:hover {
+    background-color: #ababab2a;
+    border-color: #3838382a;
+}
