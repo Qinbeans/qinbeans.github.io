@@ -2,11 +2,11 @@
 <html>
     <head>
         <title>Wild-Life</title>
-        <link rel="stylesheet" href="/base.css">
+        <link rel="stylesheet" href="../base.css">
     </head>
     <body>
-        <a class="back" href="/">Home</a>
         <div class="section">
+            <a class="back" href="../">Back</a>
             <h1>Wild-Life</h1>
             <div class="section">
                 <h2>Goal</h2>
@@ -15,14 +15,14 @@
             <div class="section">
                 <h2>How it works</h2>
                 <p>The app was designed to be scalable so there are 2 fundamental parts: frontend and backend.</p>    
-            </div>
-            <div class="section">
-                <h3>Frontend</h3>
-                <p>Using Vue 3, we designed components and pages to handle user input.  We created a custom button to handle file input while looking eye catching.  Other than that we had to preprocess the file and display the results in an informative manner.  To achieve this, we utilized websockets to maintain a connection to the backend to update the user on their results.</p>
-            </div>
-            <div class="section">
-                <h3>Backend</h3>
-                <p>This is a custom API we built from the ground up using a Golang framework called Chi.  The piece de resistance was the ML endpoints.  The user would send a POST request which would create a token and push that image request into a queue for processing.  The user would then be sent this token to connect to via websockets.  A loading page would begin to show on the frontend while the backend processes this request.  Processing included adjusting file size, executing the image through the model, and finally post processing.  Post processing formatted the results into a json which could then be sent through the websocket with a status.  That status would trigger the frontend to render the results on top of the requested image.  Another feature we thought of was saving a very basic history of the results which showed a thumbnail, classification name, and whether the image contained irritants or not.</p>
+                <div class="section">
+                    <h3>Frontend</h3>
+                    <p>Using Vue 3, we designed components and pages to handle user input.  We created a custom button to handle file input while looking eye catching.  Other than that we had to preprocess the file and display the results in an informative manner.  To achieve this, we utilized websockets to maintain a connection to the backend to update the user on their results.</p>
+                </div>
+                <div class="section">
+                    <h3>Backend</h3>
+                    <p>This is a custom API we built from the ground up using a Golang framework called Chi.  The piece de resistance was the ML endpoints.  The user would send a POST request which would create a token and push that image request into a queue for processing.  The user would then be sent this token to connect to via websockets.  A loading page would begin to show on the frontend while the backend processes this request.  Processing included adjusting file size, executing the image through the model, and finally post processing.  Post processing formatted the results into a json which could then be sent through the websocket with a status.  That status would trigger the frontend to render the results on top of the requested image.  Another feature we thought of was saving a very basic history of the results which showed a thumbnail, classification name, and whether the image contained irritants or not.</p>
+                </div>
             </div>
             <div class="section">
                 <h2>My Contributions</h2>
@@ -30,7 +30,7 @@
             </div>
             <div class="section">
                 <h2>Images</h2>
-                <div class="grid-auto">
+                <div class="section grid-auto">
                     <img src="/docs/1.png" width="254" height="254" alt="Image of the homepage">
                     <img src="/docs/2.png" width="254" height="254" alt="Image of the results page">
                     <img src="/docs/3.png" width="154" height="254" alt="Image of the history page">
